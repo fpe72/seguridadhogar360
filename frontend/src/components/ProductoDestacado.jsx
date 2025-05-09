@@ -2,42 +2,20 @@ import React from 'react';
 
 const ProductoDestacado = ({ nombre, imagen, descripcion, enlace }) => {
   return (
-    <div style={styles.card}>
-      <img src={imagen} alt={nombre} style={styles.imagen} />
-      <h3>{nombre}</h3>
-      <p>{descripcion}</p>
-      <a href={enlace} target="_blank" rel="noopener noreferrer" style={styles.boton}>
+    <div className="max-w-xs mx-auto bg-white shadow-md rounded-xl p-4 text-center font-sans">
+      <img src={imagen} alt={nombre} className="w-full rounded-lg mb-3" />
+      <h3 className="text-lg font-semibold mb-2">{nombre}</h3>
+      <p className="text-gray-700 text-sm mb-3">{descripcion}</p>
+      <a
+        href={enlace}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2 px-4 py-2 bg-cyan-600 text-white rounded-md hover:bg-cyan-700 transition"
+      >
         Ver en Amazon
       </a>
     </div>
   );
-};
-
-const styles = {
-  card: {
-    border: '1px solid #ccc',
-    borderRadius: '12px',
-    padding: '16px',
-    maxWidth: '320px',
-    textAlign: 'center',
-    boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
-    margin: '20px auto',
-    fontFamily: 'Arial',
-  },
-  imagen: {
-    width: '100%',
-    borderRadius: '8px',
-    marginBottom: '12px',
-  },
-  boton: {
-    display: 'inline-block',
-    marginTop: '10px',
-    padding: '10px 16px',
-    backgroundColor: '#0f9aa9',
-    color: '#fff',
-    textDecoration: 'none',
-    borderRadius: '6px',
-  },
 };
 
 export default ProductoDestacado;
