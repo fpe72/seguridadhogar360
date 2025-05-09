@@ -33,7 +33,7 @@ function App() {
         ))}
   
         <p style={{ fontSize: '0.85rem', color: '#666', textAlign: 'center', marginTop: '40px', maxWidth: 600, marginInline: 'auto' }}>
-          SeguridadHogar360 participa en el Programa de Afiliados de Amazon EU. Esto significa que podríamos recibir una comisión por las compras realizadas a través de los enlaces de esta página, sin que ello suponga un coste adicional para ti. Toda la información es orientativa y no constituye asesoramiento profesional.
+          SeguridadHogar360, participa en el Programa de Afiliados de Amazon EU. Esto significa que podríamos recibir una comisión por las compras realizadas a través de los enlaces de esta página, sin que ello suponga un coste adicional para ti. Toda la información es orientativa y no constituye asesoramiento profesional.
         </p>
       </>
     </div>
