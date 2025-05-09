@@ -27,7 +27,7 @@ const Home = () => {
       </div>
 
       <p className="text-sm text-gray-600 text-center mt-10 max-w-xl mx-auto px-4">
-        SeguridadHogar360 participa en el Programa de Afiliados de Amazon EU. Esto significa que podríamos recibir una comisión por las compras realizadas a través de los enlaces de esta página, sin que ello suponga un coste adicional para ti. Toda la información es orientativa y no constituye asesoramiento profesional.
+        SeguridadHogar360 participa en el Programa de Afiliados de Amazon EU. Esto significa, que podríamos recibir una comisión por las compras realizadas a través de los enlaces de esta página, sin que ello suponga un coste adicional para ti. Toda la información es orientativa y no constituye asesoramiento profesional.
       </p>
     </div>
   );
