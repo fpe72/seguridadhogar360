@@ -3,7 +3,9 @@
 import React from 'react';
 import ProductoDestacado from '../components/ProductoDestacado';
 import productos from '../data/productos';
-import { Link } from 'react-router-dom';
+// import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+
 
 const Home = () => {
  
@@ -12,12 +14,11 @@ const Home = () => {
       {/* ✅ Nueva cabecera profesional */}
       <header className="w-full bg-white shadow-md py-4 px-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          {/* Logo temporal en SVG */}
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2" />
-          </svg>
+          <img src={logo} alt="Logo Seguridad Hogar 360" className="h-16 w-auto" />
           <span className="text-xl font-bold text-gray-800">Seguridad Hogar 360</span>
         </div>
+       {/* Enlaces desactivados temporalmente */}
+        {/* 
         <nav className="space-x-4">
           <Link to="/guias" className="text-sm text-gray-700 hover:text-blue-600 transition">
             Guías de instalación
@@ -26,8 +27,9 @@ const Home = () => {
             Comparativas
           </Link>
         </nav>
-      </header>
-  
+        */}
+
+      </header>  
       {/* ✅ Sección de productos */}
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
         {productos.map((producto, index) => (
