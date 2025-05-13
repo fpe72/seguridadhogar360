@@ -6,7 +6,7 @@ const ProductoDestacado = ({ nombre, imagen, descripcion, enlace }) => {
       <img
         src={imagen}
         alt={nombre}
-        className="w-full max-w-xs h-auto mb-4 rounded-lg object-cover"
+        className="h-[220px] w-auto mx-auto object-contain bg-white rounded"
       />
       <h3 className="text-lg font-semibold text-gray-800 mb-1">{nombre}</h3>
       <p className="text-sm text-gray-600 mb-4">{descripcion}</p>
