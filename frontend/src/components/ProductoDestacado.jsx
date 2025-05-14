@@ -1,7 +1,17 @@
 // src/components/ProductoDestacado.jsx
 import React from 'react';
 
-const ProductoDestacado = ({ nombre, imagen, descripcion, enlace, onClick }) => {
+const ProductoDestacado = ({
+  nombre,
+  imagen,
+  descripcion,
+  enlace,
+  onClick,
+  valoracion,
+  resenas,
+  ventas_ultimo_anio
+}) => {
+
   return (
     <div
       onClick={onClick}
@@ -14,7 +24,16 @@ const ProductoDestacado = ({ nombre, imagen, descripcion, enlace, onClick }) => 
       />
       <h3 className="text-lg font-semibold text-gray-800 mb-1">{nombre}</h3>
       <p className="text-sm text-gray-600 mb-4">{descripcion}</p>
-
+      {/* Valoraciones estadísticas */}
+        {typeof valoracion !== 'undefined' && (
+          <div className="text-sm text-gray-600 mb-4 space-y-1">
+            <div className="font-semibold text-yellow-600">
+              ⭐ {valoracion} / 5
+            </div>
+            <div>{resenas?.toLocaleString()} valoraciones</div>
+            <div className="italic">{ventas_ultimo_anio}</div>
+          </div>
+        )}
       <a
         href={enlace}
         onClick={(e) => e.stopPropagation()} // ⛔ evita que se abra el modal al clicar en el enlace

@@ -5,7 +5,7 @@ const productos = [
       nombre: "Xiaomi Smart Camera C300 – Cámara de vigilancia 360°",
       imagen: "https://m.media-amazon.com/images/I/61IPSGiPJFL._AC_SX679_.jpg",
       descripcion: "Cámara WiFi 2K para interiores con detección de movimiento y visión nocturna.",
-      enlace: "https://www.amazon.es/dp/B0D3LH4KJM?tag=seguhogar360-21&th=1",
+      enlace: "https://www.amazon.es/dp/B0B6PG6S81?tag=seguhogar360-21&th=1",
       detalles: {
         ideal_para: "Ideal para hogares con bebés, mascotas o personas mayores. Puedes vigilar desde el móvil con audio y visión nocturna avanzada.",
         caracteristicas: [
@@ -17,7 +17,10 @@ const productos = [
           "Compatible con asistentes de voz (Alexa y Google Home)",
           "Rotación 360° horizontal y 118° vertical"
         ]
-      }
+      },
+      valoracion: 4.4,
+      resenas: 6330,
+      ventas_ultimo_anio: "Más de 3.600 unidades vendidas el último año"
     },
     {
       nombre: "TP-Link Tapo C210 – Cámara de vigilancia 3MP",
@@ -35,7 +38,10 @@ const productos = [
           "Rotación motorizada: 360° horizontal y 114° vertical",
           "Modo privacidad y compatibilidad con Alexa"
         ]
-      }
+      },
+      valoracion: 4.6,
+      resenas: 32362,
+      ventas_ultimo_anio: "Más de 24.000 unidades vendidas el último año"
     },
     {
       nombre: "EZVIZ C6N – Cámara interior motorizada",
@@ -53,7 +59,10 @@ const productos = [
           "Grabación local en tarjeta microSD (hasta 256 GB)",
           "Compatible con Alexa y Google Assistant"
         ]
-      }
+      },
+      valoracion: 4.4,
+      resenas: 29673,
+      ventas_ultimo_anio: "Más de 6.000 unidades vendidas el último año"
     },
     {
       nombre: "TP-Link Tapo C200 — Cámara de seguridad WiFi 360°",
@@ -72,7 +81,10 @@ const productos = [
           "Almacenamiento local en tarjeta microSD (hasta 128 GB)",
           "Compatible con Alexa y Google Assistant"
         ]
-      }
+      },
+      valoracion: 4.6,
+      resenas: 132811,
+      ventas_ultimo_anio: "Más de 48.000 unidades vendidas el último año"
     },
     {
       nombre: "Imou Ranger 2 — Cámara IP WiFi para interiores",
@@ -91,7 +103,10 @@ const productos = [
           "Compatible con Alexa y Google Assistant",
           "Modo privacidad activable desde la app"
         ]
-      }
+      },
+      valoracion: 4.4,
+      resenas: 3703,
+      ventas_ultimo_anio: "Más de 1.200 unidades vendidas el último año"
     },
     {
       nombre: "TP-Link Tapo C100 — Cámara fija WiFi 1080p",
@@ -110,7 +125,10 @@ const productos = [
           "Instalación sencilla y base ajustable",
           "Compatible con Alexa y Google Assistant"
         ]
-      }
+      },
+        valoracion: 4.5,
+        resenas: 22134,
+        ventas_ultimo_anio: "Más de 3.600 unidades vendidas el último año"
     },
     {
       nombre: "TP-Link Tapo C225 — Cámara WiFi con IA y seguimiento",
@@ -129,7 +147,10 @@ const productos = [
           "Grabación local en microSD (hasta 512 GB)",
           "Compatible con Alexa y Google Assistant"
         ]
-      }
+      },
+      valoracion: 4.6,
+      resenas: 1930,
+      ventas_ultimo_anio: "Más de 2.400 unidades vendidas el último año"
     },
     {
       nombre: "EZVIZ H6c — Cámara motorizada WiFi 360º",
@@ -148,7 +169,10 @@ const productos = [
           "Grabación en tarjeta microSD (hasta 256 GB)",
           "Modo privacidad con control desde la app"
         ]
-      }
+      },
+      valoracion: 4.0,
+      resenas: 0,
+      ventas_ultimo_anio: ""
     },
     {
       nombre: "TP-Link Tapo C110 — Cámara fija FHD 3MP con tarjeta SD",
@@ -167,7 +191,10 @@ const productos = [
           "Compatible con Alexa y Google Assistant",
           "Fácil de instalar y configurar"
         ]
-      }
+      },
+      valoracion: 4.5,
+      resenas: 4516,
+      ventas_ultimo_anio: "Más de 1.200 unidades vendidas el último año"
     }    
   ];
   
