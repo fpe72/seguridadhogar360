@@ -8,8 +8,13 @@ const Beneficios = () => {
   const [activo, setActivo] = useState(null);
 
   return (
-    <section className="bg-gray-50 py-16 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="relative bg-gray-50 py-16 px-6 overflow-hidden">
+      <img
+          src="/images/logo-fondo.png"
+          alt="Logo Seguridad Hogar 360"
+          className="absolute opacity-5 w-96 sm:w-[500px] left-1/2 top-12 -translate-x-1/2 z-0 pointer-events-none"
+        />
+        <div className="relative z-10 max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Beneficios reales para tu día a día</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {beneficios.map((b, i) => (
