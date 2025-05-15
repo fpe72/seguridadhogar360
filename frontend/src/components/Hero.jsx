@@ -34,7 +34,7 @@ const Hero = () => {
           <img
             src={heroImage}
             alt="Familia segura en casa"
-            className="w-full max-w-md mx-auto rounded-2xl shadow-lg"
+            className="w-full max-w-lg mx-auto rounded-2xl shadow-xl"
           />
         </div>
       </div>
