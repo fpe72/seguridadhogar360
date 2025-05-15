@@ -5,7 +5,7 @@ import heroImage from '../assets/hero-familia.jpg'; // reemplaza con tu imagen r
 
 const Hero = () => {
   return (
-    <section className="bg-white pt-24 pb-12 px-6 md:px-12">
+    <section className="bg-white pt-24 pb-6 px-6 md:px-12">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
         {/* Texto */}
         <div className="flex-1 text-left">

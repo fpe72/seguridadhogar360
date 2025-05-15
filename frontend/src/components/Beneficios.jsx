@@ -8,7 +8,7 @@ const Beneficios = () => {
   const [activo, setActivo] = useState(null);
 
   return (
-    <section className="relative bg-gray-50 py-16 px-6 overflow-hidden">
+    <section className="relative bg-gray-50 pt-12 pb-28 px-6 overflow-hidden">
       <img
           src="/images/logo-fondo.png"
           alt="Logo Seguridad Hogar 360"

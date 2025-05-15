@@ -10,11 +10,14 @@ const Header = () => {
     <header className="bg-white shadow-md px-6 py-0 fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
       <div className="flex items-center gap-4">
+      <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
         <img
           src={logo}
           alt="Logo Seguridad Hogar 360"
           className="h-20 sm:h-24 w-auto transition-all duration-300"
         />
+      </button>
+
         <div className="flex flex-col leading-tight">
           <span className="text-xl font-bold text-gray-800">Seguridad Hogar 360</span>
           <span className="text-sm text-gray-500 whitespace-nowrap hidden sm:inline">
