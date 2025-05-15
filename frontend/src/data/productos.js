@@ -304,7 +304,7 @@ const productos = [
         exterior: false,
         movil: false,
         fija: true,
-        resolucion: "1080p",
+        resolucion: "2K",
         visionNocturna: true,
         audioBidireccional: true,
         deteccionMovimiento: true,

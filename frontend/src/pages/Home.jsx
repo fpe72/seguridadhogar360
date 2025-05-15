@@ -7,6 +7,7 @@ import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import Beneficios from '../components/Beneficios';
 import FiltroProductos from '../components/FiltroProductos';
+import ModalComparador from "../components/ModalComparador";
 
 const Home = () => {
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
@@ -26,7 +27,10 @@ const Home = () => {
   };
     
   const productosFiltrados = productos.filter(filtrarProductos);
-  
+  const [comparador, setComparador] = useState([]);
+  const mostrarBotonComparar = comparador.length >= 2;
+  const [mostrarComparador, setMostrarComparador] = useState(false);
+
 
   return (
     <div className="Home">
@@ -49,6 +53,8 @@ const Home = () => {
             <ProductoDestacado
               key={index}
               {...producto}
+              comparador={comparador}
+              setComparador={setComparador}
               onClick={() => setProductoSeleccionado(producto)}
             />
           ))}
@@ -61,6 +67,23 @@ const Home = () => {
         producto={productoSeleccionado}
         onClose={() => setProductoSeleccionado(null)}
       />
+      {mostrarBotonComparar && (
+        <div className="fixed bottom-6 right-6 z-50">
+          <button
+            onClick={() => setMostrarComparador(true)}
+            className="bg-blue-600 text-white px-5 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition"
+          >
+            Comparar cámaras seleccionadas ({comparador.length})
+          </button>
+        </div>
+      )}
+      {mostrarComparador && (
+        <ModalComparador
+          productos={comparador}
+          setComparador={setComparador}
+          onClose={() => setMostrarComparador(false)}
+        />
+      )}
 
       <Footer />
     </div>

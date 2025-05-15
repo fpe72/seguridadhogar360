@@ -9,7 +9,10 @@ const ProductoDestacado = ({
   onClick,
   valoracion,
   resenas,
-  ventas_ultimo_anio
+  ventas_ultimo_anio,
+  filtros,
+  comparador,
+  setComparador
 }) => {
 
   return (
@@ -22,6 +25,37 @@ const ProductoDestacado = ({
         alt={nombre}
         className="h-[220px] w-auto mx-auto object-contain bg-white rounded"
       />
+      {/* Checkbox de comparación */}
+        <div className="mb-2 self-start">
+          <label className="inline-flex items-center gap-2 text-sm text-gray-600">
+          <input
+            type="checkbox"
+            onClick={(e) => e.stopPropagation()}
+            onChange={(e) => {
+              if (e.target.checked) {
+                if (comparador.length >= 4) {
+                  alert("Solo puedes comparar hasta 4 cámaras.");
+                  return;
+                }
+                setComparador([...comparador, {
+                  nombre,
+                  imagen,
+                  descripcion,
+                  valoracion,
+                  resenas,
+                  ventas_ultimo_anio,
+                  filtros
+                }]);
+              } else {
+                setComparador(comparador.filter((c) => c.nombre !== nombre));
+              }
+            }}
+            checked={comparador.some((c) => c.nombre === nombre)}
+          />
+
+            Añadir a comparador
+          </label>
+        </div>
       <h3 className="text-lg font-semibold text-gray-800 mb-1">{nombre}</h3>
       <p className="text-sm text-gray-600 mb-4">{descripcion}</p>
       {/* Valoraciones estadísticas */}
