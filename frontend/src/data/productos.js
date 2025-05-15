@@ -20,7 +20,20 @@ const productos = [
       },
       valoracion: 4.4,
       resenas: 6330,
-      ventas_ultimo_anio: "Más de 3.600 unidades vendidas el último año"
+      ventas_ultimo_anio: "Más de 3.600 unidades vendidas el último año",
+      filtros: {
+        interior: true,
+        exterior: false,
+        movil: true,
+        fija: false,
+        resolucion: "2K",
+        visionNocturna: true,
+        audioBidireccional: true,
+        deteccionMovimiento: true,
+        almacenamientoSD: true,
+        enmascaramientoZonas: false,
+        compatibleAlexa: true
+      },
     },
     {
       nombre: "TP-Link Tapo C210 – Cámara de vigilancia 3MP",
@@ -41,7 +54,20 @@ const productos = [
       },
       valoracion: 4.6,
       resenas: 32362,
-      ventas_ultimo_anio: "Más de 24.000 unidades vendidas el último año"
+      ventas_ultimo_anio: "Más de 24.000 unidades vendidas el último año",
+      filtros: {
+        interior: true,
+        exterior: false,
+        movil: true,
+        fija: false,
+        resolucion: "2K",
+        visionNocturna: true,
+        audioBidireccional: true,
+        deteccionMovimiento: true,
+        almacenamientoSD: true,
+        enmascaramientoZonas: false,
+        compatibleAlexa: true
+      },
     },
     {
       nombre: "EZVIZ C6N – Cámara interior motorizada",
@@ -62,7 +88,20 @@ const productos = [
       },
       valoracion: 4.4,
       resenas: 29673,
-      ventas_ultimo_anio: "Más de 6.000 unidades vendidas el último año"
+      ventas_ultimo_anio: "Más de 6.000 unidades vendidas el último año",
+      filtros: {
+        interior: true,
+        exterior: false,
+        movil: true,
+        fija: false,
+        resolucion: "1080p",
+        visionNocturna: true,
+        audioBidireccional: true,
+        deteccionMovimiento: true,
+        almacenamientoSD: true,
+        enmascaramientoZonas: false,
+        compatibleAlexa: true
+      },
     },
     {
       nombre: "TP-Link Tapo C200 — Cámara de seguridad WiFi 360°",
@@ -84,7 +123,20 @@ const productos = [
       },
       valoracion: 4.6,
       resenas: 132811,
-      ventas_ultimo_anio: "Más de 48.000 unidades vendidas el último año"
+      ventas_ultimo_anio: "Más de 48.000 unidades vendidas el último año",
+      filtros: {
+        interior: true,
+        exterior: false,
+        movil: true,
+        fija: false,
+        resolucion: "1080p",
+        visionNocturna: true,
+        audioBidireccional: true,
+        deteccionMovimiento: true,
+        almacenamientoSD: true,
+        enmascaramientoZonas: true,
+        compatibleAlexa: true
+      },
     },
     {
       nombre: "Imou Ranger 2 — Cámara IP WiFi para interiores",
@@ -106,7 +158,20 @@ const productos = [
       },
       valoracion: 4.4,
       resenas: 3703,
-      ventas_ultimo_anio: "Más de 1.200 unidades vendidas el último año"
+      ventas_ultimo_anio: "Más de 1.200 unidades vendidas el último año",
+      filtros: {
+        interior: true,
+        exterior: false,
+        movil: true,
+        fija: false,
+        resolucion: "1080p",
+        visionNocturna: true,
+        audioBidireccional: true,
+        deteccionMovimiento: true,
+        almacenamientoSD: true,
+        enmascaramientoZonas: false,
+        compatibleAlexa: true
+      },
     },
     {
       nombre: "TP-Link Tapo C100 — Cámara fija WiFi 1080p",
@@ -128,7 +193,20 @@ const productos = [
       },
         valoracion: 4.5,
         resenas: 22134,
-        ventas_ultimo_anio: "Más de 3.600 unidades vendidas el último año"
+        ventas_ultimo_anio: "Más de 3.600 unidades vendidas el último año",
+        filtros: {
+          interior: true,
+          exterior: false,
+          movil: false,
+          fija: true,
+          resolucion: "1080p",
+          visionNocturna: true,
+          audioBidireccional: true,
+          deteccionMovimiento: true,
+          almacenamientoSD: true,
+          enmascaramientoZonas: true,
+          compatibleAlexa: true
+        },
     },
     {
       nombre: "TP-Link Tapo C225 — Cámara WiFi con IA y seguimiento",
@@ -150,7 +228,20 @@ const productos = [
       },
       valoracion: 4.6,
       resenas: 1930,
-      ventas_ultimo_anio: "Más de 2.400 unidades vendidas el último año"
+      ventas_ultimo_anio: "Más de 2.400 unidades vendidas el último año",
+      filtros: {
+        interior: true,
+        exterior: false,
+        movil: true,
+        fija: false,
+        resolucion: "2K",
+        visionNocturna: true,
+        audioBidireccional: true,
+        deteccionMovimiento: true,
+        almacenamientoSD: true,
+        enmascaramientoZonas: true,
+        compatibleAlexa: true
+      },
     },
     {
       nombre: "EZVIZ H6c — Cámara motorizada WiFi 360º",
@@ -172,7 +263,20 @@ const productos = [
       },
       valoracion: 4.0,
       resenas: 0,
-      ventas_ultimo_anio: ""
+      ventas_ultimo_anio: "",
+      filtros: {
+        interior: true,
+        exterior: false,
+        movil: true,
+        fija: false,
+        resolucion: "1080p",
+        visionNocturna: true,
+        audioBidireccional: true,
+        deteccionMovimiento: true,
+        almacenamientoSD: true,
+        enmascaramientoZonas: true,
+        compatibleAlexa: true
+      },
     },
     {
       nombre: "TP-Link Tapo C110 — Cámara fija FHD 3MP con tarjeta SD",
@@ -194,7 +298,20 @@ const productos = [
       },
       valoracion: 4.5,
       resenas: 4516,
-      ventas_ultimo_anio: "Más de 1.200 unidades vendidas el último año"
+      ventas_ultimo_anio: "Más de 1.200 unidades vendidas el último año",
+      filtros: {
+        interior: true,
+        exterior: false,
+        movil: false,
+        fija: true,
+        resolucion: "1080p",
+        visionNocturna: true,
+        audioBidireccional: true,
+        deteccionMovimiento: true,
+        almacenamientoSD: true,
+        enmascaramientoZonas: true,
+        compatibleAlexa: true
+      },
     }    
   ];
   
