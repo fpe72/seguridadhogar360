@@ -39,7 +39,10 @@ const Home = () => {
       <Hero />
       <Beneficios />
         <section className="py-12 bg-gray-50">
+        {process.env.NODE_ENV === "development" && (
           <GeneradorProducto />
+        )}
+
         </section>
 
       {/* Sección de productos */}
