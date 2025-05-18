@@ -42,7 +42,7 @@ const ModalComparador = ({ productos, onClose, setComparador }) => {
               <tr>
                 <th className="text-left text-sm font-semibold text-gray-700 border-b p-2">Atributo</th>
                 {productos.map((prod, idx) => (
-                  <th key={idx} className="text-sm font-semibold text-gray-700 border-b p-2 text-center relative">
+                  <th key={idx} className="text-sm font-semibold text-gray-700 border-b p-2 text-center relative w-36">
                   <button
                     onClick={() => setComparador(productos.filter((p, i) => i !== idx))}
                     className="absolute top-0 right-1 text-gray-400 hover:text-red-500 text-lg font-bold"
@@ -50,10 +50,22 @@ const ModalComparador = ({ productos, onClose, setComparador }) => {
                   >
                     ×
                   </button>
+                
                   <img src={prod.imagen} alt={prod.nombre} className="h-16 mx-auto mb-1 object-contain" />
-                  <div className="text-xs">{prod.nombre}</div>
-                </th>
-
+                
+                  <div className="text-xs mb-1">{prod.nombre}</div>
+                
+                  {prod.enlace && (
+                    <a
+                      href={prod.enlace}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-blue-600 text-white text-xs px-3 py-1 rounded hover:bg-blue-700 transition"
+                    >
+                      Ver en Amazon
+                    </a>
+                  )}
+                </th>                
                 ))}
               </tr>
             </thead>

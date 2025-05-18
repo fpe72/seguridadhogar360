@@ -44,7 +44,8 @@ const ProductoDestacado = ({
                   valoracion,
                   resenas,
                   ventas_ultimo_anio,
-                  filtros
+                  filtros,
+                  enlace
                 }]);
               } else {
                 setComparador(comparador.filter((c) => c.nombre !== nombre));
