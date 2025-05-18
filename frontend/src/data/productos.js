@@ -312,6 +312,70 @@ const productos = [
         enmascaramientoZonas: true,
         compatibleAlexa: true
       },
+    },
+    {
+      nombre: "EZVIZ CP1 4MP:",
+      imagen: "https://m.media-amazon.com/images/I/61lpI7-1LTL._AC_SX679_.jpg",
+      descripcion: "Camara de Vigilancia Interior con Seguimiento Automático, 4MP Cámara IP Domicilio WiFi 360° para Bebe con Visión Nocturna Color, Detección Humana,Llamada Bidireccional, Soporta 512GB, CP1 4MP",
+      enlace: "https://www.amazon.es/dp/B095YN4TML?tag=seguhogar360-21&th=1",
+      detalles: {
+        ideal_para: "Seguridad interior, Monitoreo de mascotas, Monitoreo de bebé",
+        caracteristicas: [
+          "4MP Resolución & 360° Protección con Patrulla Personalizada",
+          "Detección Humanas y Seguimiento Automático",
+          "Visión Nocturna en Color Inteligente",
+          "Detección de Ruido Fuerte & Llamadas Bidireccionales",
+          "Soporta Tarjeta MicroSD hasta 512GB & EZVIZ CloudPlay"
+        ]
+      },
+      valoracion: 4.5,
+      resenas: 2141,
+      ventas_ultimo_anio: "600",
+      filtros: {
+        interior: true,
+        exterior: false,
+        movil: true,
+        fija: false,
+        resolucion: "4MP",
+        visionNocturna: true,
+        audioBidireccional: true,
+        deteccionMovimiento: true,
+        almacenamientoSD: true,
+        enmascaramientoZonas: false,
+        compatibleAlexa: false
+      }
+    },
+    {
+      nombre: " Imou Cámara Vigilancia Interior Ranger 2C",
+      imagen: "https://m.media-amazon.com/images/I/614UL3k1ZaL._AC_SY879_.jpg",
+      descripcion: "Imou 4MP Cámara Vigilancia WiFi Interior para Mascotas",
+      enlace: "https://www.amazon.es/dp/B095Y1JNHG/?tag=seguhogar360-21&th=1",
+      detalles: {
+        ideal_para: "para Mascotas,360° Cámara IP WiFi con Detección de Humano, Visión Nocturna, Audio Bidireccional, Control Remoto, Modo Privacidad,Compatible con Alexa",
+        caracteristicas: [
+          "QHD 2.5K y Cobertura de 360​°",
+          "Detección Humana y Alarmas con Inteligencia Artificial",
+          "Detección Humana y Alarmas con Inteligencia Artificial",
+          "Seguimiento Inteligente y Funciona con Alexa",
+          "Puede grabar videos en una tarjeta SD de hasta 256 GB (no incluida) o en Imou Cloud"
+        ]
+      },
+      valoracion: 4.4,
+      resenas: 7188,
+      ventas_ultimo_anio: "6000",
+      filtros: {
+        interior: true,
+        exterior: false,
+        movil: true,
+        fija: false,
+        resolucion: "undefined",
+        visionNocturna: true,
+        audioBidireccional: true,
+        deteccionMovimiento: true,
+        almacenamientoSD: true,
+        enmascaramientoZonas: false,
+        compatibleAlexa: true
+      }
     }    
   ];
   

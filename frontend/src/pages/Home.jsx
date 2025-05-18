@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import Beneficios from '../components/Beneficios';
 import FiltroProductos from '../components/FiltroProductos';
 import ModalComparador from "../components/ModalComparador";
+import GeneradorProducto from "../components/GeneradorProducto";
 
 const Home = () => {
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
@@ -37,6 +38,10 @@ const Home = () => {
       <Header />
       <Hero />
       <Beneficios />
+        <section className="py-12 bg-gray-50">
+          <GeneradorProducto />
+        </section>
+
       {/* Sección de productos */}
       <section id="productos" className="relative scroll-mt-32 py-20 px-6 bg-white">
           <h2 className="text-2xl font-bold text-center text-gray-800 mb-12">
