@@ -2,6 +2,7 @@
 
 import React from 'react';
 
+
 const Footer = () => {
   return (
     <footer className="bg-gray-100 mt-16 py-8 text-sm text-gray-600">
@@ -11,11 +12,11 @@ const Footer = () => {
         <div className="mt-4 flex justify-center gap-6 text-blue-600 font-medium">
           <a href="/aviso-legal" className="hover:underline">Aviso Legal</a>
           <a href="/politica-privacidad" className="hover:underline">Política de Privacidad</a>
-          <a href="/contacto" className="hover:underline">Contacto</a>
         </div>
       </div>
     </footer>
   );
 };
+
 
 export default Footer;
