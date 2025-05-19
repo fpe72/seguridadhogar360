@@ -24,6 +24,9 @@ const ModalComparador = ({ productos, onClose, setComparador }) => {
         </button>
 
         <h2 className="text-2xl font-bold mb-6 text-center">Comparativa de cámaras seleccionadas</h2>
+        <p className="text-sm text-gray-600 text-center">
+          Visualiza diferencias clave entre modelos: resolución, visión nocturna, detección, compatibilidad y más.
+        </p>
         <div className="text-center mb-4">
           <button
             onClick={() => {

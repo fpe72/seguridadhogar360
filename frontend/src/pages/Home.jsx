@@ -38,7 +38,7 @@ const Home = () => {
     <Helmet>
       <title>Cámaras WiFi para tu hogar | SeguridadHogar360</title>
       <meta name="description" content="Compara y elige la mejor cámara WiFi para tu hogar. Recomendaciones claras, datos reales y una guía emocional para proteger lo que más quieres." />
-
+      <link rel="canonical" href="https://www.seguridadhogar360.com/" />
       {/* Open Graph */}
       <meta property="og:title" content="SeguridadHogar360 | Cámaras WiFi para proteger tu hogar" />
       <meta property="og:description" content="Comparativas útiles, valoraciones reales y recomendaciones para encontrar la cámara WiFi perfecta para tu hogar." />
@@ -79,13 +79,21 @@ const Home = () => {
       {/* Sección de productos */}
       <section id="productos" className="relative scroll-mt-32 py-20 px-6 bg-white">
           <h1 className="text-2xl font-bold text-center text-gray-800 mb-12">
-          Seleccionamos por ti las mejores cámaras para proteger lo que más quieres
+          Las mejores cámaras WiFi para tu hogar: protege a tu familia, mascotas y todo lo que más quieres
           </h1>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mt-4">
+            Analizamos, comparamos y te guiamos con claridad para que elijas la cámara de vigilancia WiFi ideal para interiores o exteriores, bebés, mayores o mascotas.
+          </p>
+
         {/* Filtros visuales */}
         <div className="max-w-6xl mx-auto mb-6">
         <h2 className="text-xl font-semibold text-gray-700 mb-4">
           Filtra por características
         </h2>
+        <p className="text-sm text-gray-600 mb-4 text-center">
+          Filtra por tipo, resolución, visión nocturna, compatibilidad con asistentes y más. Encuentra la cámara perfecta según tus necesidades reales.
+        </p>
+
           <FiltroProductos onChange={setFiltrosActivos} />
         </div>
         {/* Productos filtrados */}
