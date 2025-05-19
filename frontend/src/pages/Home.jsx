@@ -45,10 +45,31 @@ const Home = () => {
       <meta property="og:image" content="https://www.seguridadhogar360.com/og-image.jpg" />
       <meta property="og:url" content="https://www.seguridadhogar360.com/" />
       <meta property="og:type" content="website" />
+      <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "SeguridadHogar360 | Cámaras WiFi para el hogar",
+              "url": "https://www.seguridadhogar360.com",
+              "description": "Compara y elige la mejor cámara WiFi para tu hogar. Recomendaciones claras, datos reales y una guía emocional para proteger lo que más quieres.",
+              "publisher": {
+                "@type": "Organization",
+                "name": "SeguridadHogar360",
+                "url": "https://www.seguridadhogar360.com",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.seguridadhogar360.com/logo.png"
+                }
+              }
+            }
+          `}
+       </script>
     </Helmet>
-    <div className="Home">
+      <div className="Home">
       <Header />
       <Hero />
+      <h2 className="sr-only">Beneficios de nuestras cámaras WiFi</h2>
       <Beneficios />
         <section className="py-12 bg-gray-50">
         {process.env.NODE_ENV === "development" && (
