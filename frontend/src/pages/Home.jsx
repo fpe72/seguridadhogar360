@@ -9,6 +9,7 @@ import Beneficios from '../components/Beneficios';
 import FiltroProductos from '../components/FiltroProductos';
 import ModalComparador from "../components/ModalComparador";
 import GeneradorProducto from "../components/GeneradorProducto";
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
@@ -32,8 +33,19 @@ const Home = () => {
   const mostrarBotonComparar = comparador.length >= 2;
   const [mostrarComparador, setMostrarComparador] = useState(false);
 
-
   return (
+    <>
+    <Helmet>
+      <title>Cámaras WiFi para tu hogar | SeguridadHogar360</title>
+      <meta name="description" content="Compara y elige la mejor cámara WiFi para tu hogar. Recomendaciones claras, datos reales y una guía emocional para proteger lo que más quieres." />
+
+      {/* Open Graph */}
+      <meta property="og:title" content="SeguridadHogar360 | Cámaras WiFi para proteger tu hogar" />
+      <meta property="og:description" content="Comparativas útiles, valoraciones reales y recomendaciones para encontrar la cámara WiFi perfecta para tu hogar." />
+      <meta property="og:image" content="https://seguridadhogar360.com/og-image.jpg" />
+      <meta property="og:url" content="https://seguridadhogar360.com/" />
+      <meta property="og:type" content="website" />
+    </Helmet>
     <div className="Home">
       <Header />
       <Hero />
@@ -42,9 +54,7 @@ const Home = () => {
         {process.env.NODE_ENV === "development" && (
           <GeneradorProducto />
         )}
-
         </section>
-
       {/* Sección de productos */}
       <section id="productos" className="relative scroll-mt-32 py-20 px-6 bg-white">
           <h2 className="text-2xl font-bold text-center text-gray-800 mb-12">
@@ -54,7 +64,6 @@ const Home = () => {
         <div className="max-w-6xl mx-auto mb-6">
           <FiltroProductos onChange={setFiltrosActivos} />
         </div>
-
         {/* Productos filtrados */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {productosFiltrados.map((producto, index) => (
@@ -67,9 +76,7 @@ const Home = () => {
             />
           ))}
         </div>
-
         </section>
-        
       {/* Modal */}
       <ModalProducto
         producto={productoSeleccionado}
@@ -95,6 +102,7 @@ const Home = () => {
 
       <Footer />
     </div>
+    </>
   );
 };
 
