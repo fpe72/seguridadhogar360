@@ -42,8 +42,8 @@ const Home = () => {
       {/* Open Graph */}
       <meta property="og:title" content="SeguridadHogar360 | Cámaras WiFi para proteger tu hogar" />
       <meta property="og:description" content="Comparativas útiles, valoraciones reales y recomendaciones para encontrar la cámara WiFi perfecta para tu hogar." />
-      <meta property="og:image" content="https://seguridadhogar360.com/og-image.jpg" />
-      <meta property="og:url" content="https://seguridadhogar360.com/" />
+      <meta property="og:image" content="https://www.seguridadhogar360.com/og-image.jpg" />
+      <meta property="og:url" content="https://www.seguridadhogar360.com/" />
       <meta property="og:type" content="website" />
     </Helmet>
     <div className="Home">
