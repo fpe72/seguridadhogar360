@@ -1,5 +1,6 @@
 // src/components/ProductoDestacado.jsx
 import React from 'react';
+import { Helmet } from "react-helmet";
 
 const ProductoDestacado = ({
   nombre,
@@ -14,6 +15,24 @@ const ProductoDestacado = ({
   comparador,
   setComparador
 }) => {
+
+  <Helmet>
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        name: nombre,
+        image: imagen,
+        description: descripcion,
+        brand: {
+          "@type": "Brand",
+          name: nombre?.split(' ')[0] || "Marca desconocida"
+        },
+        url: enlace
+      })}
+    </script>
+</Helmet>
+
 
   return (
     <div
