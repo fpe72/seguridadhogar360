@@ -57,9 +57,9 @@ const Home = () => {
         </section>
       {/* Sección de productos */}
       <section id="productos" className="relative scroll-mt-32 py-20 px-6 bg-white">
-          <h2 className="text-2xl font-bold text-center text-gray-800 mb-12">
+          <h1 className="text-2xl font-bold text-center text-gray-800 mb-12">
           Seleccionamos por ti las mejores cámaras para proteger lo que más quieres
-          </h2>
+          </h1>
         {/* Filtros visuales */}
         <div className="max-w-6xl mx-auto mb-6">
           <FiltroProductos onChange={setFiltrosActivos} />
