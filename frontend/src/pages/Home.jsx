@@ -71,7 +71,7 @@ const Home = () => {
       <Hero />
       <h2 className="sr-only">Beneficios de nuestras cámaras WiFi</h2>
       <Beneficios />
-        <section className="py-12 bg-gray-50">
+        <section className="py-6 bg-gray-50">
         {process.env.NODE_ENV === "development" && (
           <GeneradorProducto />
         )}
