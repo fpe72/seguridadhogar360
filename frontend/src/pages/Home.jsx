@@ -77,7 +77,7 @@ const Home = () => {
         )}
         </section>
       {/* Sección de productos */}
-      <section id="productos" className="relative scroll-mt-32 py-20 px-6 bg-white">
+      <section id="productos" className="relative scroll-mt-32 py-12 px-6 bg-white">
           <h1 className="text-2xl font-bold text-center text-gray-800 mb-12">
           Las mejores cámaras WiFi para tu hogar: protege a tu familia, mascotas y todo lo que más quieres
           </h1>
